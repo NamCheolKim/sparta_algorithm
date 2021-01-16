@@ -16,7 +16,7 @@ class LinkedList:
 
 
 def get_linked_list_sum(linked_list_1, linked_list_2):
-    # 구현해보세요!
+
     sum_1 = _get_linked_list_sum(linked_list_1)
     sum_2 = _get_linked_list_sum(linked_list_2)
 
