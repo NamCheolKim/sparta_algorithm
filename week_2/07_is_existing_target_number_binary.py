@@ -7,10 +7,9 @@ def is_exist_target_number_binary(target, numbers):
     numbers.sort()
     current_min = 0
     current_max = len(numbers) - 1
-    current_guess = (current_min + current_max) // 2
+    current_guess = (current_min + current_max) // 2    # 3
 
     while current_min <= current_max:
-
         if numbers[current_guess] == target:
             return True
         elif numbers[current_guess] < target:
