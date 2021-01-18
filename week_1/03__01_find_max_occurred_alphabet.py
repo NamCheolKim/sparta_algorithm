@@ -14,9 +14,9 @@ def find_max_occurred_alphabet(string):
             if char == alphabet:
                 occurrence += 1
 
-            if occurrence > max_occurrence:
-                max_occurrence = occurrence
-                max_alphabet = alphabet
+        if occurrence > max_occurrence:
+            max_occurrence = occurrence
+            max_alphabet = alphabet
 
     return max_alphabet
 

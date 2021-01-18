@@ -1,8 +1,7 @@
 def count_down(number):
-    if number < 0:
+    if number < 1:
         return
     print(number)
-
     count_down(number - 1)
 
 
