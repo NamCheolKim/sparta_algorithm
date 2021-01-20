@@ -14,3 +14,5 @@ def selection_sort(array):
 
 selection_sort(input)
 print(input)  # [1, 2, 4, 6, 9]
+
+
