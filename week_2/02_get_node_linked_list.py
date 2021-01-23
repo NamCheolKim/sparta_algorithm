@@ -1,3 +1,5 @@
+# 링크드 리스트에서 index번째 원소를 반환하시오.
+
 class Node:
     def __init__(self, data):
         self.data = data
