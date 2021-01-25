@@ -7,6 +7,10 @@ class Node:
 node = Node(3)
 first_node = Node(4)
 node.next = first_node
+print(node.data)
+print(first_node.data)
+print(node.next.data)
+print()
 
 
 class LinkedList:
@@ -24,12 +28,14 @@ class LinkedList:
 
     def print_all(self):
         cur = self.head
+
         while cur is not None:
-            print(cur.date)
+            print(cur.data)
             cur = cur.next
 
 
 linked_list = LinkedList(3)
 linked_list.append(4)
 linked_list.append(5)
+print()
 linked_list.print_all()

@@ -33,6 +33,7 @@ class LinkedList:
         return node
 
     def add_node(self, index, value):
+
         new_node = Node(value)
         if index == 0:
             new_node.next = self.head
