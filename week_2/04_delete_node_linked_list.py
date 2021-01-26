@@ -12,12 +12,14 @@ class LinkedList:
 
     def append(self, value):
         cur = self.head
+
         while cur.next is not None:
             cur = cur.next
         cur.next = Node(value)
 
     def print_all(self):
         cur = self.head
+
         while cur is not None:
             print(cur.data)
             cur = cur.next
@@ -25,7 +27,7 @@ class LinkedList:
     def get_node(self, index):
         node = self.head
         cnt = 0
-        
+
         while cnt < index:
             node = node.next
             cnt += 1
@@ -35,7 +37,6 @@ class LinkedList:
     def add_node(self, index, value):
         new_node = Node(value)
         if index == 0:
-            new_node.next = self.head
             self.head = new_node
             return
 
@@ -47,6 +48,7 @@ class LinkedList:
     def delete_node(self, index):
         if index == 0:
             self.head = self.head.next
+
         node = self.get_node(index - 1)
         node.next = node.next.next
 
@@ -58,5 +60,3 @@ linked_list.append(6)
 linked_list.add_node(2, 9)
 linked_list.delete_node(1)
 linked_list.print_all()
-
-
